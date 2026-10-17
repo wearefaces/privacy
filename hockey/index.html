@@ -10,21 +10,26 @@
 
 <h2>2. Advertising for free users (Google AdMob)</h2>
 <p>The free version shows ads served by Google AdMob (Google Ireland Ltd. / Google LLC). To serve and measure ads and prevent fraud, Google's SDK may process: device identifiers (such as the identifier for vendor), IP address (which Google may use to estimate your coarse, approximate location), device and app information, and how you interact with ads (advertising data). We do not receive this data in a form that identifies you.</p>
-<p><strong>Consent (EEA, UK, Switzerland).</strong> Before any ads are requested, we show Google's consent form (Google User Messaging Platform). You can accept, reject or customise your choices. You can change your choice at any time in the app under <em>Settings → Privacy options</em>. If you decline personalised ads, Google may still show non-personalised ads.</p>
+<p><strong>Consent (EEA, UK, Switzerland).</strong> Before any ads are requested, we show Google's consent form (Google User Messaging Platform). You can accept, reject or customise your choices. Free users in these regions can change their choice at any time in the app under <em>Settings → Privacy options</em>. If you decline personalised ads, Google may still show non-personalised ads. Outside these regions no consent form is required, so the form and the Privacy options entry are not shown.</p>
 <p>More: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>3. Premium removes all ads</h2>
-<p>If you buy Premium, the app shows no ads and the advertising SDK is not loaded or started at all, so no data is sent to Google for advertising.</p>
+<p>If you have Premium, the app shows no ads. When the app starts and confirms Premium with Apple, neither Google's consent form nor the advertising SDK is started, and no ad requests are made, so no data is sent to Google for advertising. If you buy Premium while the app is open, ads stop immediately and no further ad requests are made.</p>
 
 <h2>4. App analytics (Firebase Analytics)</h2>
-<p>We use Google Firebase Analytics to understand, anonymously, how the app is used (for example which screens and features are used) so we can improve it. Firebase Analytics only runs after you have given consent; if you do not consent, it stays switched off. It does not use the advertising identifier (IDFA). The data is used in aggregate and is not linked to your identity. You can withdraw consent at any time in <em>Settings → Privacy options</em>.</p>
+<p>We use Google Firebase Analytics to understand, anonymously, how the app is used (for example which screens and features are used) so we can improve it. It does not use the advertising identifier (IDFA). The data is used in aggregate and is not linked to your identity.</p>
+<ul>
+<li><strong>EEA, UK and Switzerland:</strong> Firebase Analytics is not started unless you consent in Google's consent form. If you do not consent, it stays off. Free users can withdraw consent at any time in <em>Settings → Privacy options</em>. For Premium users (who do not see the consent form) it stays off.</li>
+<li><strong>Other regions:</strong> where no consent form is required, anonymous Firebase Analytics is switched on once the app has checked your purchase status with Apple.</li>
+</ul>
 <p>More: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
 
 <h2>5. No tracking</h2>
 <p>The app does not request Apple's App Tracking Transparency permission and does not access the IDFA. We do not track you across other companies' apps or websites, and we do not sell your data.</p>
 
 <h2>6. Push notifications (OneSignal)</h2>
-<p>We use OneSignal (OneSignal, Inc.) to send optional push notifications, such as training reminders. OneSignal is only started after you have given consent and allowed notifications in the iOS permission prompt. It then processes your device's push token and a OneSignal device ID, along with basic device information, so notifications can be delivered. You can turn notifications off at any time in iOS Settings → Notifications.</p>
+<p>We use OneSignal (OneSignal, Inc.) to send optional push notifications, such as training reminders. When the app opens, before the privacy step below has finished, the OneSignal SDK only downloads the app's notification settings from OneSignal using our app ID. It sends no device identifiers, push token or usage data.</p>
+<p>OneSignal is fully started only after the app's privacy step has finished: you have answered Google's consent form (EEA, UK and Switzerland), or no form was needed (other regions, or Premium). The app then shows the iOS notification permission prompt. From that point OneSignal registers your device so notifications can be delivered: it receives your device's push token, a OneSignal subscription ID and basic device information (such as device model, iOS and app version, language and time zone). Notifications are only shown if you allow them in the iOS prompt. You can turn them off at any time in iOS Settings → Notifications. OneSignal location sharing is switched off.</p>
 <p>More: <a href="https://onesignal.com/privacy_policy">OneSignal Privacy Policy</a>.</p>
 
 <h2>7. In-app purchases</h2>
@@ -34,19 +39,19 @@
 <p>Depending on your choices, the following data may be processed by the services above. None of it is linked to your identity, and none of it is used for tracking:</p>
 <ul>
 <li><strong>Device identifiers</strong> (identifier for vendor, Firebase installation ID, push token / OneSignal ID)</li>
-<li><strong>Product interaction</strong> (anonymous app usage, via Firebase Analytics with consent)</li>
+<li><strong>Product interaction</strong> (anonymous app usage, via Firebase Analytics, with consent in the EEA, UK and Switzerland)</li>
 <li><strong>Advertising data</strong> (ads shown and ad interactions, via Google AdMob, free version only)</li>
 <li><strong>Coarse location</strong> (approximate location estimated from IP address by the ad provider, free version only)</li>
 </ul>
 
 <h2>9. Legal bases (GDPR)</h2>
-<p>Analytics, push notifications and personalised advertising: your consent (Art. 6(1)(a)), which you can withdraw at any time. Non-personalised ads and fraud prevention: our legitimate interest in funding a free app (Art. 6(1)(f)). Purchases: performance of a contract (Art. 6(1)(b)), handled by Apple.</p>
+<p>In the EEA, UK and Switzerland, analytics and personalised advertising are based on your consent (Art. 6(1)(a)), which you can withdraw at any time. Showing push notifications is based on your choice in the iOS permission prompt. Registering the device for notifications, non-personalised ads and fraud prevention are based on our legitimate interest in running and funding a free app (Art. 6(1)(f)). Purchases: performance of a contract (Art. 6(1)(b)), handled by Apple.</p>
 
 <h2>10. Retention</h2>
 <p>Data on your device is kept until you delete it or delete the app. Data processed by Google and OneSignal is kept according to their own retention policies (linked above); Firebase Analytics data is kept for a limited period and then deleted automatically.</p>
 
 <h2>11. Your rights</h2>
-<p>Under the GDPR you have the right to access, rectify, erase, restrict or object to processing of your personal data, to data portability, and to withdraw consent at any time. Because the app has no accounts and we hold no data that identifies you, the simplest way to remove all app data is to delete the app from your device. You can withdraw consent in <em>Settings → Privacy options</em> and turn off notifications in iOS Settings. For any request, contact us and we will help, including with requests to Google or OneSignal. You can also complain to the Swedish Authority for Privacy Protection (IMY, <a href="https://www.imy.se">imy.se</a>) or your local data protection authority.</p>
+<p>Under the GDPR you have the right to access, rectify, erase, restrict or object to processing of your personal data, to data portability, and to withdraw consent at any time. Because the app has no accounts and we hold no data that identifies you, the simplest way to remove all app data is to delete the app from your device. Free users in the EEA, UK and Switzerland can withdraw consent in <em>Settings → Privacy options</em>, and anyone can turn off notifications in iOS Settings. For any request, contact us and we will help, including with requests to Google or OneSignal. You can also complain to the Swedish Authority for Privacy Protection (IMY, <a href="https://www.imy.se">imy.se</a>) or your local data protection authority.</p>
 
 <h2>12. Children</h2>
 <p>The app is not directed at children under 13 (16 in the EEA where applicable), and we do not knowingly collect their data.</p>
