@@ -2,32 +2,55 @@
 <title>Egg Catcher: Wolf Arcade – Privacy Policy</title>
 <style>body{font:16px/1.55 -apple-system,system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#222}h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}</style></head><body>
 <h1>Egg Catcher: Wolf Arcade – Privacy Policy</h1>
-<p>Last updated: 17 October 2026</p>
+<p>Last updated: 20 October 2026</p>
 <p>This policy explains how the iOS app <strong>Egg Catcher: Wolf Arcade</strong> ("the app", App Store ID 6776805671) handles information. The app's developer ("we", "us") is responsible for the information described here (the data controller).</p>
 
 <h2>1. No account, game data stays on your device</h2>
 <p>The app has no sign-up and no user accounts. Your scores and settings are stored only on your device. Deleting the app deletes them. We do not sell your data.</p>
 
 <h2>2. Advertising for free users (Google AdMob)</h2>
-<p>The free version shows ads served by Google AdMob (Google Ireland Ltd. / Google LLC). To serve and measure ads and prevent fraud, Google's SDK may process device and app information, IP address (which Google may use to estimate your approximate location) and how you interact with ads. The app does not request Apple's App Tracking Transparency permission and does not access the advertising identifier (IDFA). If you buy Remove Ads, no ads are shown.</p>
+<p>The free version shows ads served by Google AdMob (Google Ireland Ltd. / Google LLC). To serve and measure ads and prevent fraud, Google's SDK may process device and app information, IP address (which Google may use to estimate your approximate location) and how you interact with ads. The app does not request Apple's App Tracking Transparency permission, so iOS does not give it the advertising identifier (IDFA). If you buy Remove Ads, no ads are shown.</p>
+<p>We do not use your data to track you across apps and websites owned by other companies, and we do not share it with data brokers. The app does not ask for tracking permission, so iOS gives neither the app nor Google your device's advertising identifier (IDFA). Depending on your choices in Google's consent message and on the law where you live, Google may show personalised or non-personalised ads; see Google's policies linked below.</p>
 <p>More: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-<h2>3. App analytics and configuration (Firebase)</h2>
-<p>We use Google Firebase Analytics to understand how the game is played so we can improve it. Events include game results (such as score and game mode), ads shown, and purchase events, together with the app version, your device's language and region setting, whether the app is ad-free, a random session ID that is created each time the app starts, and, for purchases, the product, price and a one-way hashed transaction ID. We use Firebase Remote Config to adjust offers and settings without an app update. This data is used in aggregate and is not linked to your identity.</p>
-<p>More: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+<h2>3. Your choices and consent (Google consent message)</h2>
+<p>If you are in the European Economic Area, the United Kingdom or Switzerland, or in another region where consent is required, the app shows Google's consent message (Google User Messaging Platform, which uses the IAB Transparency &amp; Consent Framework) the first time you open it. Until you make a choice, the app does not request ads and does not send analytics, crash reports or Remote Config requests. Depending on your choice, ads may be personalised, non-personalised or limited, and analytics, crash reporting and Remote Config are switched on or stay off. If the app cannot reach Google to show the message, it does not request ads and keeps these features off, and tries again later.</p>
+<p>You can change or withdraw your choice at any time: open Settings in the app (the ВРЕМЯ / TIME button) and tap <strong>Privacy options</strong>. When you withdraw consent, analytics and crash reporting stop and unsent crash reports are deleted. "Privacy options" is shown where Google requires it.</p>
+<p>To show the message and remember your choice, Google's consent tool uses your IP address to work out your region and stores your choice (the IAB TC string) on your device.</p>
+<p>In regions where no consent message is required, ads, analytics, crash reporting and Remote Config are active from the first launch, and the app tells Google Analytics not to use the data for ad personalisation. To stop all collection, delete the app; to ask for deletion of data already collected, contact us (see "Your rights").</p>
 
-<h2>4. In-app purchases</h2>
-<p>Purchases (such as Remove Ads) are processed entirely by Apple through the App Store. We do not receive your name, payment card or other payment details. The app stores on your device whether Remove Ads is active and can restore purchases through Apple.</p>
+<h2>4. App analytics and configuration (Firebase)</h2>
+<p>We use Google Firebase Analytics to understand how the game is played so we can improve it. The app sends events such as game results (score and game mode), offers shown and tapped, ads shown, ad impressions (<code>ad_impression</code>: ad format, ad unit, the estimated ad revenue, its currency and precision), and purchase, failed-purchase and restore events. They are sent together with the app version, your device's language and region setting, whether the app is ad-free, a random session ID created each time the app starts, and, for purchases, the product, price, currency and a one-way hashed transaction ID. Firebase attaches its own app-instance identifier and derives an approximate location from your IP address. This data is associated with that identifier on your device, but not with your name, email or any account (the app has none).</p>
+<p>We use Firebase Remote Config to adjust offers and settings without an app update. To do this, the app sends a Firebase installation ID (Firebase Installations), the app version, your device's OS version, language, country and time zone. Firebase Sessions (part of Firebase Crashlytics) records when an app session starts and when the app goes to the background, with app and OS information, SDK version, network connection type and the Firebase installation ID, so that crashes and stability can be measured per session.</p>
+<p>Retention: analytics event data is kept for 2 months and then deleted automatically; aggregated reports without identifiers may be kept longer. Firebase installation IDs are kept until they are deleted. More: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+<p>Analytics, Remote Config and Sessions only run after you have given consent where consent is required (see §3). Otherwise the app uses built-in default settings.</p>
 
-<h2>5. Ratings and sharing</h2>
+<h2>5. Crash reports (Firebase Crashlytics)</h2>
+<p>To find and fix crashes, the app uses Google Firebase Crashlytics. If the app crashes, it sends a crash report containing the stack trace, the state of the app at the time of the crash, the device model, OS version, free memory and disk space, app version, a Crashlytics installation identifier, and a short log of recent analytics events from that session. Crash reports are used only to keep the app stable. They are not linked to your identity, and we do not add any user ID to them. Crash reports are only sent after you have given consent where consent is required. A report recorded before you have made a choice stays on your device and is sent only if you later give consent; if you decline or withdraw consent, unsent reports are deleted. If a Remote Config rollout is active, the report also says which rollout variant the app received. Firebase keeps crash reports and the identifiers attached to them for 90 days. More: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+
+<h2>6. In-app purchases</h2>
+<p>Purchases (such as Remove Ads) are processed entirely by Apple through the App Store. We do not receive your name, payment card or other payment details. The app stores on your device whether Remove Ads is active and can restore purchases through Apple. When a purchase or restore completes, the app records an analytics event with the product, price, currency and a one-way hashed transaction ID (see §4); Apple's transaction details and your Apple ID stay with Apple.</p>
+
+<h2>7. Summary of data collected</h2>
+<ul>
+<li><strong>Linked to the app-instance / installation identifier on your device:</strong> approximate location (from IP address), device identifiers (Firebase app-instance and installation IDs; identifiers used by Google's ad SDK), purchase history (Remove Ads purchase events), product interaction (game, offer and ad events), advertising data (ads shown and ad impressions), and other usage data (ad-free status, session information). Used for third-party advertising by Google (location, identifiers, product interaction, advertising data), analytics (all of these) and app functionality such as the consent message, Remote Config and crash fixing (location, identifiers, product interaction, other usage data). Purchase history is used for analytics only.</li>
+<li><strong>Not linked to you:</strong> crash data, performance data and other diagnostic data (Crashlytics, Firebase Sessions, Google's ad SDK). Used for analytics, app functionality and ad delivery.</li>
+<li><strong>Tracking:</strong> none. We do not track you across other companies' apps or websites.</li>
+<li>We do not collect your name, email, contacts, photos, precise location, payment details or any content you create.</li>
+</ul>
+
+<h2>8. Legal bases (GDPR)</h2>
+<p>Advertising, analytics, crash reporting and Remote Config in the EEA, UK and Switzerland: your consent, given in the consent message and withdrawable at any time in Settings → Privacy options (Art. 6(1)(a) GDPR and the ePrivacy rules). Showing limited or non-personalised ads, fraud prevention and security: our legitimate interest in funding a free app (Art. 6(1)(f)). Purchases: performance of a contract (Art. 6(1)(b)), processed by Apple.</p>
+
+<h2>9. Ratings and sharing</h2>
 <p>The app may show Apple's standard rating prompt, and you can share the app using the iOS share sheet. These are handled by iOS.</p>
 
-<h2>6. Your rights</h2>
-<p>Depending on where you live (for example under the GDPR), you may have the right to access, rectify, erase, restrict or object to processing of your personal data, and to withdraw consent at any time. Because the app has no accounts, the simplest way to remove app data from your device is to delete the app. For any request, contact us and we will help. In the EEA you can also complain to your local data protection authority (in Sweden: IMY, <a href="https://www.imy.se">imy.se</a>).</p>
+<h2>10. Your rights</h2>
+<p>Depending on where you live (for example under the GDPR), you may have the right to access, rectify, erase, restrict or object to processing of your personal data, and to withdraw consent at any time. To withdraw consent, open Settings in the app and tap Privacy options (see §3). Because the app has no accounts, the simplest way to remove app data from your device is to delete the app. For any request, contact us and we will help. In the EEA you can also complain to your local data protection authority (in Sweden: IMY, <a href="https://www.imy.se">imy.se</a>).</p>
 
-<h2>7. Children</h2>
+<h2>11. Children</h2>
 <p>We do not knowingly collect personal information from children.</p>
 
-<h2>8. Changes and contact</h2>
+<h2>12. Changes and contact</h2>
 <p>We will update this page if the app's data practices change, and change the date above. Contact: <a href="mailto:appsinsights@gmail.com">appsinsights@gmail.com</a>.</p>
 </body></html>
