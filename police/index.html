@@ -1,39 +1,120 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Police Radio Scanner + – Privacy Policy</title>
-<style>body{font:16px/1.55 -apple-system,system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#222}h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}</style></head><body>
+<style>body{font:16px/1.55 -apple-system,system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#222}h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid #ddd;padding:.4rem;text-align:left;vertical-align:top}</style></head><body>
 <h1>Police Radio Scanner + – Privacy Policy</h1>
-<p>Last updated: 17 October 2026</p>
-<p>This policy explains how the iOS app <strong>Police Radio Scanner +</strong> ("the app", App Store ID 966533522) handles information. The app's developer ("we", "us") is responsible for the information described here (the data controller).</p>
-
-<h2>1. No account</h2>
-<p>The app has no sign-up and no user accounts. Your settings are stored on your device. We do not sell your data.</p>
-
-<h2>2. Location (optional)</h2>
-<p>If you allow location access ("While Using the App"), the app uses your approximate location (about 1 km accuracy) to show scanner stations near you. To find your region, the location is converted to a place name using Apple's geocoding service on iOS. We do not receive or store your location. If no nearby stations are found, the name of the region (for example the state) may be recorded in anonymous app analytics (see section 6). You can turn location access off at any time in iOS Settings.</p>
-
-<h2>3. Scanner feeds (Broadcastify)</h2>
-<p>Station listings and live audio come from Broadcastify. Requests for station data are sent through our server function hosted on Google Firebase (Cloud Functions, EU region), which forwards them to Broadcastify. Live audio is streamed from Broadcastify's servers, which, like any web server, receive your IP address. Station data is also loaded from a public file hosted on Google. Audio can keep playing in the background.</p>
-
-<h2>4. App integrity (Firebase App Check)</h2>
-<p>To protect our server function from abuse, the app uses Firebase App Check with Apple's App Attest, which confirms to the server that requests come from a genuine copy of the app.</p>
-
-<h2>5. Advertising for free users (Google AdMob)</h2>
-<p>The free version shows ads served by Google AdMob (Google Ireland Ltd. / Google LLC). To serve and measure ads and prevent fraud, Google's SDK may process device and app information, IP address (which Google may use to estimate your approximate location) and how you interact with ads. The app does not request Apple's App Tracking Transparency permission and does not access the advertising identifier (IDFA).</p>
-<p>More: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-
-<h2>6. App analytics and configuration (Firebase)</h2>
-<p>We use Google Firebase Analytics to understand how the app is used (for example which screens and features are used) so we can improve it. We use Firebase Remote Config to adjust app settings without an app update. This data is used in aggregate and is not linked to your identity.</p>
-<p>More: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
-
-<h2>7. In-app purchases</h2>
-<p>Purchases are processed entirely by Apple through the App Store. We do not receive your name, payment card or other payment details. The app only checks with Apple whether a purchase is active.</p>
-
-<h2>8. Your rights</h2>
-<p>Depending on where you live (for example under the GDPR), you may have the right to access, rectify, erase, restrict or object to processing of your personal data, and to withdraw consent at any time. Because the app has no accounts, the simplest way to remove app data from your device is to delete the app. For any request, contact us and we will help. In the EEA you can also complain to your local data protection authority (in Sweden: IMY, <a href="https://www.imy.se">imy.se</a>).</p>
-
-<h2>9. Children</h2>
-<p>We do not knowingly collect personal information from children.</p>
-
-<h2>10. Changes and contact</h2>
-<p>We will update this page if the app's data practices change, and change the date above. Contact: <a href="mailto:appsinsights@gmail.com">appsinsights@gmail.com</a>.</p>
+<p>Last updated: 20 October 2026 · Applies to all current versions of the app; the consent message is available from version 2.5.7</p>
+<p><strong>Versions before 2.5.7.</strong> Earlier versions of the app do not yet show Google's consent message. In those versions, app analytics and ads start when you open the app, also in the EEA, the UK and Switzerland. Please update to the latest version to make your choice. You can also contact us to have analytics data linked to your device deleted.</p>
+<p>This policy explains how the iOS app <strong>Police Radio Scanner +</strong> ("the app", App Store ID 966533522) handles personal data.</p>
+<h2>1. Who is responsible</h2>
+<p>This app is published by the team behind Police Radio Scanner+ ("we", "us").<br>Contact for all privacy questions and requests: <strong><a href="mailto:appsinsights@gmail.com">appsinsights@gmail.com</a></strong></p>
+<h2>2. Summary</h2>
+<ul>
+<li>No account and no sign-up. We never ask for your name, email or phone number in the app.</li>
+<li>Scanner audio and station lists come from Broadcastify and other radio servers. Requests for Broadcastify data go through our server function in the EU.</li>
+<li>In the EEA, the UK and Switzerland, ads and app analytics only use your device storage after you choose in Google's consent message. You can change your choice at any time in <strong>Settings → Privacy options</strong>.</li>
+<li>We do not use Apple's advertising identifier (IDFA), we do not ask for App Tracking Transparency permission, and we do not track you across other companies' apps or websites.</li>
+<li>We do not sell your personal data.</li>
+</ul>
+<h2>3. Data that stays on your device</h2>
+<p>Your settings, saved stations and premium status are stored only on your device. Deleting the app deletes them.</p>
+<p><strong>Location (optional).</strong> If you allow location access ("While Using the App"), the app uses your location on the device to find nearby scanner stations. It converts the location to a place name using Apple's geocoding service. We do not receive or store your location. If no nearby stations are found, only the name of the region (for example the US state) may be sent with an app-analytics event (section 7). You can turn location off at any time in iOS Settings.</p>
+<h2>4. Scanner feeds, radio streams and station data</h2>
+<ul>
+<li><strong>Broadcastify scanner data.</strong> To list scanner feeds and live calls, the app sends the feed or group identifier and a position or time range to our server function on Google Cloud (Firebase Cloud Functions, region europe-west1, Belgium). The function forwards the request to Broadcastify (api.bcfy.io). No identifier of you or your device is included. Google, as our hosting provider, processes your IP address and technical request data to run the function.</li>
+<li><strong>Live audio</strong> is streamed directly from Broadcastify's servers and, for some music and radio stations in the catalogue, from those stations' own streaming servers. Like any web server, they receive your IP address and technical data (such as device type and app version in the request). They are independent providers.</li>
+<li><strong>Station list and logos.</strong> The app downloads a public station list file hosted on Google (Google Sheets), and station logos from our web host (digidot.co). These servers receive your IP address.</li>
+</ul>
+<h2>5. App protection (Firebase App Check)</h2>
+<p>To protect our server function from abuse, the app uses Firebase App Check with Apple's App Attest. App Attest confirms that a request comes from a genuine copy of the app. Google processes an attestation token from Apple and technical request data for this.</p>
+<h2>6. Consent (EEA, UK and Switzerland)</h2>
+<p>Starting with version 2.5.7, when you first open the app in the EEA, the UK or Switzerland, the app shows <strong>Google's consent message</strong> (Google User Messaging Platform, a Google-certified consent tool using the IAB Europe Transparency &amp; Consent Framework).</p>
+<ul>
+<li>You can <strong>consent</strong>, <strong>not consent</strong>, or <strong>manage options</strong> per purpose and per ad partner.</li>
+<li>Ads start only after this step.</li>
+<li>App analytics (section 7) runs only if you give consent for measurement.</li>
+<li>Your choice is stored on your device.</li>
+<li>You can change or withdraw it at any time in <strong>Settings → Privacy options</strong>. Withdrawing is as easy as giving consent. It does not affect processing that happened before.</li>
+<li>If you do not consent, the app still works and shows <strong>limited ads</strong>. Limited ads don't use personal data to personalise ads; Google still uses your IP address to deliver the ad, and may use it to prevent fraud.</li>
+</ul>
+<h2>7. App analytics, configuration and experiments (Google Firebase)</h2>
+<p><strong>Analytics.</strong> With your consent (EEA, UK and Switzerland), or by default elsewhere, we use <strong>Google Analytics for Firebase</strong> to understand how the app is used and to improve it. It collects:</p>
+<ul>
+<li>a random <strong>app instance ID</strong>, created on install and reset when you reinstall;</li>
+<li><strong>usage events</strong>, such as listening started, a stream error, the paywall shown or closed, a plan selected, and a purchase started, completed, cancelled or failed, together with the product, price and currency;</li>
+<li>whether you have premium;</li>
+<li>the paywall version you saw;</li>
+<li>device model, iOS and app version, language;</li>
+<li>an <strong>approximate location</strong> (country or city) that Google derives from your IP address.</li>
+</ul>
+<p>We do not set a user ID and do not combine this data with your name or contact details.</p>
+<p><strong>Purchase events.</strong> When you buy or renew a subscription, the app reports the transaction (product, price, currency, date) to Firebase Analytics as a purchase event. Apple processes the payment itself. We never receive your name or payment card details.</p>
+<p><strong>Remote Config and A/B tests.</strong> We use <strong>Firebase Remote Config</strong> to change app settings without an update. We use <strong>Firebase A/B Testing</strong> to compare versions of the in-app purchase screen (for example, layout and annual price).</p>
+<ul>
+<li>Remote Config uses a random Firebase installation ID and your device's country, language and app version to decide which settings or test group apply. It also helps keep you in the same group.</li>
+<li>In the EEA, the UK and Switzerland, the app loads these settings only after the consent step. If you have not consented to analytics, you get the standard version and are not part of the test.</li>
+<li>We only use test results in aggregated form.</li>
+</ul>
+<h2>8. Advertising (Google AdMob)</h2>
+<p>The free version shows banner and interstitial ads served by <strong>Google AdMob</strong> (Google Ireland Ltd. / Google LLC). To serve and measure ads, limit how often you see an ad, and prevent fraud, Google's SDK may process:</p>
+<ul>
+<li>device and app information;</li>
+<li>the identifier for vendor (IDFV) and other app-bound identifiers;</li>
+<li>your IP address (from which Google may estimate an approximate location);</li>
+<li>your interaction with ads;</li>
+<li>crash and performance diagnostics.</li>
+</ul>
+<p>Whether ads are <strong>personalised</strong>, <strong>non-personalised</strong> or <strong>limited</strong> depends on your consent choices (section 6) and on Google's rules. The app does <strong>not</strong> request App Tracking Transparency permission and does <strong>not</strong> access the advertising identifier (IDFA). Premium subscribers see no ads. From version 2.5.6, the ad SDK is not started for them.</p>
+<p>More: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · the list of ad partners is shown in the consent message.</p>
+<h2>9. In-app purchases</h2>
+<p>Subscriptions and the lifetime purchase are processed by Apple through the App Store under Apple's terms. The app checks with Apple (StoreKit) whether a purchase is active, and stores the result on your device. Purchase events are also sent to Firebase Analytics (section 7).</p>
+<h2>10. Feedback and contact</h2>
+<p>If you choose to send feedback, the app opens a draft in your mail app with the app version, iOS version and current feed name filled in. You decide whether to send it. If you write to us, we receive your email address and your message, and use them only to answer you.</p>
+<h2>11. Legal bases (GDPR) and the Swedish electronic communications rules</h2>
+<table><thead><tr><th>Processing</th><th>Legal basis</th></tr></thead><tbody>
+<tr><td>Storing and reading information on your device for ads and analytics (EEA, UK, Switzerland)</td><td>Your <strong>consent</strong> (Art. 6(1)(a) GDPR; Swedish Electronic Communications Act (2022:482) ch. 9 s. 28 and equivalent ePrivacy rules)</td></tr>
+<tr><td>Personalised or non-personalised ads, ad measurement, analytics, A/B tests (EEA, UK, Switzerland)</td><td>Your <strong>consent</strong> (Art. 6(1)(a))</td></tr>
+<tr><td>Limited ads without consent; fraud prevention</td><td>Our <strong>legitimate interest</strong> in financing a free app and preventing abuse (Art. 6(1)(f))</td></tr>
+<tr><td>Analytics and ads outside the EEA, UK and Switzerland</td><td>Our <strong>legitimate interest</strong> in improving and financing the app (Art. 6(1)(f)), together with your choices under local law</td></tr>
+<tr><td>Delivering scanner feeds, streams and station data; App Check protection of the server function</td><td><strong>Performance of the service you request</strong> (Art. 6(1)(b)) and our <strong>legitimate interest</strong> in security (Art. 6(1)(f)). Storage on your device for these purposes is strictly necessary</td></tr>
+<tr><td>Recording your consent choice</td><td><strong>Legal obligation</strong> (Art. 6(1)(c), Art. 7(1) GDPR)</td></tr>
+<tr><td>Purchases</td><td><strong>Contract</strong> (Art. 6(1)(b)), handled by Apple</td></tr>
+<tr><td>Answering your emails</td><td><strong>Legitimate interest</strong> (Art. 6(1)(f))</td></tr>
+</tbody></table>
+<h2>12. Who receives data</h2>
+<ul>
+<li><strong>Google</strong> (Google Ireland Ltd.; Google LLC, USA).</li>
+</ul>
+<p>  - <strong>Processor</strong> on our behalf for Firebase (Analytics, Remote Config, A/B Testing, App Check, Cloud Functions, Installations), under Google's data processing terms.<br>  - <strong>Independent controller</strong> for AdMob advertising and the consent message, under Google's controller terms.<br>  - Analytics data may also be used by Google for its own purposes only to the extent our Google Analytics data-sharing settings allow.</p>
+<ul>
+<li><strong>Ad partners</strong> listed in the consent message (EEA, UK, Switzerland). Each is an independent controller for what it receives through Google's ad auction.</li>
+<li><strong>Broadcastify</strong> and the <strong>radio stations' streaming servers</strong>, independent providers, as described in section 4.</li>
+<li><strong>Apple</strong>, for App Store purchases, App Attest and geocoding, under Apple's own privacy policy.</li>
+</ul>
+<p>We do not sell your personal data and do not share it with data brokers.</p>
+<h2>13. Transfers outside the EU/EEA</h2>
+<p>Google LLC and some ad partners and stream providers are located in the USA or other countries outside the EEA. Transfers to Google LLC rely on the <strong>EU–US Data Privacy Framework</strong>, under which Google LLC is certified. Where it doesn't apply, they rely on the <strong>EU Standard Contractual Clauses</strong> in Google's terms. Our server function runs in the EU (europe-west1), but Google may access data from outside the EEA under these safeguards.</p>
+<h2>14. How long data is kept</h2>
+<ul>
+<li><strong>On your device:</strong> until you delete the app. Your consent choice is kept until you change it, until Google's consent message asks again (for example, after the ad partner list changes), or until you delete the app.</li>
+<li><strong>Google Analytics for Firebase:</strong> event-level data is kept for <strong>2 months</strong> and then deleted automatically. Aggregated reports without identifiers may be kept longer.</li>
+<li><strong>Server function logs (Google Cloud):</strong> about <strong>30 days</strong>.</li>
+<li><strong>AdMob and ad partners:</strong> according to their own policies.</li>
+<li><strong>Emails to us:</strong> as long as needed to handle your request, and at most 12 months after the conversation ends.</li>
+</ul>
+<h2>15. Your rights</h2>
+<p>You have the right to:</p>
+<ul>
+<li><strong>access</strong> your personal data, have it <strong>corrected</strong> or <strong>erased</strong>, or <strong>restrict</strong> its processing;</li>
+<li><strong>data portability</strong>;</li>
+<li><strong>object</strong> to processing based on legitimate interest;</li>
+<li><strong>withdraw consent</strong> at any time (Settings → Privacy options).</li>
+</ul>
+<p>Because the app has no accounts, we can usually identify analytics data only through the app instance ID on your device. Write to <strong><a href="mailto:appsinsights@gmail.com">appsinsights@gmail.com</a></strong> and we will help, including with requests to Google. Deleting the app removes all app data from your device, and reinstalling creates new random IDs.</p>
+<p>You can complain to the Swedish Authority for Privacy Protection (<strong>IMY</strong>, <a href="https://www.imy.se">imy.se</a>) or to the data protection authority where you live or work.</p>
+<h2>16. Children</h2>
+<p>The app is not directed at children. We do not knowingly collect personal data from children under 13, or under the age of digital consent in your country in the EEA (13–16).</p>
+<h2>17. Changes</h2>
+<p>We will update this page when the app's data practices change, and change the date at the top. For important changes we will also inform you in the app or in the consent message.</p>
+<h2>18. Contact</h2>
+<p><strong><a href="mailto:appsinsights@gmail.com">appsinsights@gmail.com</a></strong></p>
 </body></html>
